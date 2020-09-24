@@ -36,7 +36,7 @@ sMerah.addEventListener('input', function(){
     const r =sMerah.value;
     const g =sHijau.value;
     document.body.style.backgroundColor = 'rgb('+ r +', '+ g +' ,100)'
-})
+});
 const sHijau =document.querySelector('input[name=sHijau]');
 
 sHijau.addEventListener('input', function(){
@@ -44,7 +44,7 @@ sHijau.addEventListener('input', function(){
     const g =sHijau.value;
     const b =sBiru.value;
     document.body.style.backgroundColor = 'rgb('+ r +', '+ g +' ,'+ b +')'
-})
+});
 
 const sBiru =document.querySelector('input[name=sBiru]');
 sBiru.addEventListener('input', function(){
@@ -52,4 +52,9 @@ sBiru.addEventListener('input', function(){
     const g =sHijau.value;
     const b =sBiru.value;
     document.body.style.backgroundColor = 'rgb('+ r +', '+ g +' ,'+ b +')'
+});
+
+document.body.addEventListener('mousemove', function(event){
+    // melihat posisi mouse
+    event.clientX
 })
