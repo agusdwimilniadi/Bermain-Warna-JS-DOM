@@ -32,7 +32,24 @@ acakWarna.addEventListener('click', function(){
 
 const sMerah =document.querySelector('input[name=sMerah]');
 
-sMerah.addEventListener('change', function(){
+sMerah.addEventListener('input', function(){
     const r =sMerah.value;
-    document.body.style.backgroundColor = 'rgb('+ r +', 100 ,100)'
+    const g =sHijau.value;
+    document.body.style.backgroundColor = 'rgb('+ r +', '+ g +' ,100)'
+})
+const sHijau =document.querySelector('input[name=sHijau]');
+
+sHijau.addEventListener('input', function(){
+    const r =sMerah.value;
+    const g =sHijau.value;
+    const b =sBiru.value;
+    document.body.style.backgroundColor = 'rgb('+ r +', '+ g +' ,'+ b +')'
+})
+
+const sBiru =document.querySelector('input[name=sBiru]');
+sBiru.addEventListener('input', function(){
+    const r =sMerah.value;
+    const g =sHijau.value;
+    const b =sBiru.value;
+    document.body.style.backgroundColor = 'rgb('+ r +', '+ g +' ,'+ b +')'
 })
