@@ -54,7 +54,13 @@ sBiru.addEventListener('input', function(){
     document.body.style.backgroundColor = 'rgb('+ r +', '+ g +' ,'+ b +')'
 });
 
-document.body.addEventListener('mousemove', function(event){
-    // melihat posisi mouse
-    event.clientX
-})
+
+// Membuat mouse ganti warna
+
+document.body.addEventListener('mousemove', function(event) {
+    const xPos = Math.round((event.clientX / window.innerWidth) * 255);
+    
+    const yPos = Math.round((event.clientX / window.innerWidth) * 255);
+
+    document.body.style.backgroundColor = 'rgb('+ xPos +', '+ yPos +' ,'+ 100 +')'  
+});
