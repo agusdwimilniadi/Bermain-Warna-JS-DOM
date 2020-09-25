@@ -62,5 +62,6 @@ document.body.addEventListener('mousemove', function(event) {
     
     const yPos = Math.round((event.clientX / window.innerWidth) * 255);
 
-    document.body.style.backgroundColor = 'rgb('+ xPos +', '+ yPos +' ,'+ 100 +')'  
+    const bE = Math.round((5/yPos)*255)
+    document.body.style.backgroundColor = 'rgb('+ xPos +', '+ yPos +' ,'+ bE +')'  
 });
